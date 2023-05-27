@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mansoor/filament-torchlight/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mansoor/filament-torchlight/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/mansoor/filament-torchlight.svg?style=flat-square)](https://packagist.org/packages/mansoor/filament-torchlight)
 
-A [Torchlight](https://torchlight.dev/) plugin for [FilamentPHP](https://filamentphp.com)
+A [Torchlight](https://torchlight.dev/) plugin for [FilamentPHP](https://filamentphp.com), it provides a read-only field to hightlight the code under field.
 
 ## Installation
 
