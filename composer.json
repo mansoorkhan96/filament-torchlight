@@ -1,24 +1,26 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mansoor/filament-torchlight",
+    "description": "This is my package filament-torchlight",
     "keywords": [
-        ":vendor_name",
+        "mansoor",
         "laravel",
-        ":package_slug"
+        "filament-torchlight",
+        "torchlight"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mansoor/filament-torchlight",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mansoor",
+            "email": "beingdeveloper96@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
+        "illuminate/contracts": "^10.0",
         "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "torchlight/torchlight-laravel": "^0.5.13"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -30,18 +32,17 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Mansoor\\FilamentTorchlight\\": "src/",
+            "Mansoor\\FilamentTorchlight\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Mansoor\\FilamentTorchlight\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,11 +62,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "Mansoor\\FilamentTorchlight\\FilamentTorchlightServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
