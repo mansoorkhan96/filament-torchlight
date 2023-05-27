@@ -4,9 +4,9 @@
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.
 */
-pre {
-    @apply my-4 rounded overflow-x-auto;
-}
+/* pre {
+    @apply my-4 rounded shadow overflow-x-auto;
+} */
 
 /*
  Add some vertical padding and expand the width
@@ -15,7 +15,7 @@ pre {
  colors extend edge to edge.
 */
 pre code.torchlight {
-    @apply block py-4 min-w-max;
+    @apply block py-4 min-w-max rounded shadow-xl overflow-x-auto;
 }
 
 /*
