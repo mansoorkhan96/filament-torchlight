@@ -15,7 +15,7 @@ composer require mansoor/filament-torchlight
 
 ## Setup Torchlight
 
-You must follow follow the Torchlight documentation to [Add Torchlight Middleware](https://torchlight.dev/docs/clients/laravel#middleware) and [Publish the Torchlight configuration file](https://torchlight.dev/docs/clients/laravel#configuration)
+You must follow the Torchlight documentation to [Add Torchlight Middleware](https://torchlight.dev/docs/clients/laravel#middleware) and [Publish the Torchlight configuration file](https://torchlight.dev/docs/clients/laravel#configuration)
 
 Once you are done. Make sure to create an API Token from [torchlight.dev](https://torchlight.dev) and add to your `.env` file.
 
