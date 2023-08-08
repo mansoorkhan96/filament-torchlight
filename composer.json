@@ -18,9 +18,9 @@
     ],
     "require": {
         "php": "^8.1",
-        "filament/filament": "*",
+        "filament/filament": "^3.0",
         "illuminate/contracts": "^10.0",
-        "spatie/laravel-package-tools": "^1.14.0",
+        "spatie/laravel-package-tools": "^1.15.0",
         "torchlight/torchlight-laravel": "^0.5.13"
     },
     "require-dev": {

@@ -2,20 +2,28 @@
 
 namespace Mansoor\FilamentTorchlight;
 
-use Filament\PluginServiceProvider;
+use Filament\Support\Assets\Css;
+use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentTorchlightServiceProvider extends PluginServiceProvider
+class FilamentTorchlightServiceProvider extends PackageServiceProvider
 {
-    protected array $styles = [
-        'filament-torchlight' => __DIR__.'/../resources/dist/css/filament-torchlight.css',
-    ];
+    public static string $name = 'filament-torchlight';
 
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-torchlight')
+            ->name(static::$name)
             ->hasAssets()
             ->hasViews();
+    }
+
+    public function packageBooted(): void
+    {
+        FilamentAsset::register(
+            [Css::make(static::$name, __DIR__.'/../resources/dist/css/filament-torchlight.css')->loadedOnRequest()],
+            'mansoor/filament-torchlight'
+        );
     }
 }

@@ -1,20 +1,13 @@
 <x-dynamic-component
     :component="$getFieldWrapperView()"
-    :id="$getId()"
-    :label="$getLabel()"
-    :label-sr-only="$isLabelHidden()"
-    :helper-text="$getHelperText()"
-    :hint="$getHint()"
-    :hint-icon="$getHintIcon()"
-    :required="$isRequired()"
-    :state-path="$getStatePath()"
+    :field="$field"
 >
-    <pre>
+    <pre
+        x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('filament-torchlight', package: 'mansoor/filament-torchlight'))]"
+    >
         <x-torchlight-code
-            id="{{ $getId() }}"
-            dusk="filament.forms.{{ $getStatePath() }}"
-            language="{{ $getLanguage() ?? ''  }}"
-            theme="{{ $getTheme() ?? '' }}"
+            language="{{ $field->getLanguage() ?? ''  }}"
+            theme="{{ $field->getTheme() ?? '' }}"
             {{ $attributes }}
         >{!! $getState() !!}</x-torchlight-code>
     </pre>
