@@ -13,6 +13,12 @@ To install, require the package from composer:
 composer require mansoor/filament-torchlight
 ```
 
+### ⚠️ Use version `0.0.2` for Filament 2 support ⚠️
+
+```bash
+composer require "creagia/filament-code-field:^0.0.2"
+```
+
 ## Setup Torchlight
 
 You must follow follow the Torchlight documentation to [Add Torchlight Middleware](https://torchlight.dev/docs/clients/laravel#middleware) and [Publish the Torchlight configuration file](https://torchlight.dev/docs/clients/laravel#configuration)
